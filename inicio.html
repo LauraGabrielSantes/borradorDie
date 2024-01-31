@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        
+
+        .home{
+            flex-wrap: wrap;
+            
+        }
+        .in-flex{
+            flex:1;
+            min-width: 250px;
+            
+        }
+        .in-flex:first-child{ 
+            flex:2;
+           color: rgb(187, 20, 209);
+           padding: 25px;
+           margin: 20px;
+        }
+
+
+        .in-flex:last-child{
+            color: chartreuse;
+        }
+
+        .in-flex div{
+            padding: 25px;
+            margin: 20px;
+            
+        }
+
+ 
+        .titulo{
+                color: green;
+                display: block;
+            }
+        .texto{
+                font-size:20px;
+                display: block;
+            }
+       .img{
+                font-size: 19px;
+                width: 50px;
+                display: block;
+                float:left;
+            }
+
+
+            
+        @media (max-width: 600px) {
+        section.home{
+            display: flex;
+        }
+            div.titulo{
+            order: 1;
+        }
+        
+        div.texto{
+            display: inline;
+            order:3;
+        }  
+        .in-flex:first-child{ 
+        order:2;    
+        color:black;
+        }
+        }
+      
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+
+<body>
+    <section class="home in-flex">
+        <div class="in-flex img">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, id quos nobis delectus quas ab iste quibusdam earum deleniti! Dolores sequi assumenda accusantium et praesentium, suscipit beatae ullam! Non, debitis!</div>
+        <div class="titulo"><h1>hola</h1></div>
+        <div class="in-flex texto">sequi voluptas iure quos neque libero maxime molestias necessitatibus porro suscipit illo, accusamus numquam amet commodi ea, facere dolores voluptatem minus. Nesciunt!</div>    
+        
+        
+    </section>
+</body>
+</html>
