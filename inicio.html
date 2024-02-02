@@ -5,6 +5,8 @@
         
 
         .home{
+            width: 1325px;
+            border:3px solid #35A800;
             flex-wrap: wrap;
             
         }
@@ -16,54 +18,95 @@
         .in-flex:first-child{ 
             flex:2;
            color: rgb(187, 20, 209);
-           padding: 25px;
-           margin: 20px;
         }
 
 
         .in-flex:last-child{
-            color: chartreuse;
+            color: black
         }
 
-        .in-flex div{
-            padding: 25px;
-            margin: 20px;
-            
+       .contentImg{
+        margin: 20px 60px 20px 20px;
+        padding: 40px;
+        width:331px ;
+       }
+
+        div.titulo{
+            padding:25px 25px 0px 25px;
+            margin: 00px 15px 0px 380px;
+        }
+        div.texto{
+            padding:25px 25px 0px 25px;
+            margin: 00px 15px 0px 380px;
+        }
+        div.contentImg{
+           
+
         }
 
  
         .titulo{
-                color: green;
+                font-size: 40px;
+                font-weight: bold;
+                color:#35A800;
                 display: block;
+            
             }
         .texto{
                 font-size:20px;
                 display: block;
+               
             }
-       .img{
-                font-size: 19px;
-                width: 50px;
-                display: block;
-                float:left;
-            }
-
-
-            
-        @media (max-width: 600px) {
-        section.home{
-            display: flex;
+        .cargo{
+            color:#35A800;
+            font-size:17px;
+            font-weight: bold;
+        }    
+       .imgn{
+        width: 100%;
+        object-fit: scale-down;
+        float:left;
+        
         }
-            div.titulo{
-            order: 1;
+        
+        
+        
+        
+          
+
+                       
+        
+
+        /*pequeño*/
+        
+        @media (max-width: 900px) {
+        section.home{
+            display:flex;
+            width: auto;
+        }
+        .contentImg{
+            
+            margin: 20px;
+            padding: 30px;
+        }
+        div.titulo{
+            
+            margin: 20px;
+            padding: 10px;
+            text-align: center;
         }
         
         div.texto{
-            display: inline;
+            
+            margin: 20px;
+            padding: 30px;
             order:3;
         }  
         .in-flex:first-child{ 
-        order:2;    
-        color:black;
+            /*float: none;
+            /*display: block;*/
+            background-color: aqua;
+            order:2;    
         }
         }
       
@@ -76,12 +119,14 @@
 
 
 <body>
-    <section class="home in-flex">
-        <div class="in-flex img">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, id quos nobis delectus quas ab iste quibusdam earum deleniti! Dolores sequi assumenda accusantium et praesentium, suscipit beatae ullam! Non, debitis!</div>
-        <div class="titulo"><h1>hola</h1></div>
-        <div class="in-flex texto">sequi voluptas iure quos neque libero maxime molestias necessitatibus porro suscipit illo, accusamus numquam amet commodi ea, facere dolores voluptatem minus. Nesciunt!</div>    
-        
-        
-    </section>
+    <section class="home">
+        <div class="contentImg in-flex"><img src="media/OmarLucioCabreraJimenez.jpg" class=" imgn"></div>
+        <div class="titulo in-flex"> Bienvenida </div>
+        <div class="in-flex texto"> <p>El DIE, Departamento de Ingeniería Eléctrica por sus siglas, es una comunidad de alumnos, trabajadores administrativos y profesores-investigadores que desarrollamos un conjunto de actividades sustantivas como la docencia, la investigación, la preservación de la cultura, la vinculación y la transferencia del conocimiento. Estamos insertos en un modelo de Universidad en donde la búsqueda de soluciones a los problemas actuales de nuestras disciplinas, permea todo nuestro quehacer. De modo que si consideras estudiar una carrera con gran potencial y llena de retos, entonces deberías acercarte al DIE, de la UAM-Iztapalapa.</p>
+        <p>Asimismo, si eres un investigador que busca vincularse con colegas con una actitud proactiva hacia la construcción y aplicación del conocimiento, tenemos un lugar para ti. Si eres un empresario en búsqueda de soluciones de Alta Tecnología, acércate a nosotros.</p>
+        <p>M.C. Omar Lucio Cabrera Jiménez</p>
+        <p class="cargo">Jefe de Departamento</p>
+    </div>    
+     </section>
 </body>
 </html>
